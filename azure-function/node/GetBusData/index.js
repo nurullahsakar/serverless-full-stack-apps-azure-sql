@@ -13,6 +13,7 @@ const GTFS_RT_FEED = process.env['RealTimeFeedUrl'];
 const LOGIC_APP_URL = process.env['LogicAppUrl'];
 
 // eslint-disable-next-line func-names
+
 module.exports = async function (context) {
   // Get the routes we want to monitor
   const routes = await GetMonitoredRoutes();
